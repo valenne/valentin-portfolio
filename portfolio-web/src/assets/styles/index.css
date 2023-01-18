@@ -1,53 +1,61 @@
 @import url("reusable.css");
 
+/* importants elements */
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --bg-color-dark-green: #041f1e;
+  --bg-color-middle-green: #1e2d2f;
+  --bg-color-middle2-green: #062221;
+  --bg-color-soft-green: #87bba2;
+  --bg-color-navy: #0b032d;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --font-white: #e2fdff;
+  --font-size-m: 1.6rem;
+  --font-size-g: 2rem;
+  --font-size-x: 2.4rem;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+  --gap-s: 2.4rem;
+  --gap-m: 3.2rem;
+  --gap-g: 4.8rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* GENERAL */
+html {
+  background-color: var(--bg-color-dark-green);
 }
 
-/* navBar */
+/* NAVBAR */
 .header {
-  /* background-color: red; */
   padding: 1rem 2rem;
-  height: 6.25rem;
+  min-height: 10rem;
   width: 100%;
-  background-color: #1b1a1a;
+  background-color: var(--bg-color-middle2-green);
+  box-shadow: 8px 16px 13px -13px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 8px 16px 13px -13px rgba(0, 0, 0, 0.23);
 }
 
 .navBar {
   width: 100%;
-  padding: 1rem;
-
+  padding: 0rem 3.2rem;
   margin: 0 auto;
 }
+
+/* LOGO */
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: fit-content;
 }
 .logo {
   position: relative;
   display: block;
-  width: 0.5rem;
-  height: 2rem;
-  background-color: black;
+  width: 1rem;
+  height: 3rem;
+  background-color: var(--font-white);
 }
 
 .logo:after {
@@ -56,7 +64,7 @@ h1 {
   right: -1.1rem;
   width: 0.5rem;
   height: 2rem;
-  background-color: black;
+  background-color: var(--font-white);
 }
 .logo:before {
   content: "";
@@ -64,7 +72,7 @@ h1 {
   right: -0.54rem;
   width: 0.5rem;
   height: 2rem;
-  background-color: black;
+  background-color: var(--font-white);
   rotate: -30deg;
 }
 
@@ -72,20 +80,52 @@ h1 {
   rotate: 20deg;
 }
 
+.logo-anchor {
+  width: 100%;
+}
+
 /* NavLinks */
 .nav-link-container {
   height: 100%;
+  gap: var(--gap-m);
 }
 
-.nav-link > li {
+.nav-link {
+  gap: var(--gap-m);
+}
+
+.nav-li {
   width: 100%;
   margin: 0 0.3125rem;
   padding: 0.625rem;
+}
+
+.nav-li > a > span {
+  font-family: var(--font-mono);
+  color: var(--font-white);
+  font-size: var(--font-size-m);
+  margin-right: 1rem;
 }
 
 .nav-link > li > a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: var(--font-white);
+  font-size: var(--font-size-m);
+  font-family: var(--font-mono);
+}
+
+/* BUTTON RESUME */
+.btn-resume {
+  background-color: var(--bg-color-middle2-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-m);
+  border-color: var(--bg-color-soft-green);
+  color: var(--bg-color-soft-green);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btn-resume:is(:hover, :active) {
+  background-color: #00072d;
 }

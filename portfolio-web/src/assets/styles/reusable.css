@@ -1,5 +1,6 @@
-/* flex propertys */
+@import url("./index.css");
 
+/* flex propertys */
 .flex {
   display: flex;
 }
@@ -20,14 +21,11 @@
 }
 
 /* Button */
-
-button {
-  border-radius: 8px;
+.btn {
+  color: var(--font-white);
+  border-radius: 0.5rem;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 1rem 1.2rem;
   font-weight: 500;
-  font-family: inherit;
-  background-color: red;
   cursor: pointer;
 }

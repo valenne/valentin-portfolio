@@ -1,6 +1,6 @@
 import "./assets/styles/index.css";
 import "./assets/styles/App.css";
-import { NavBar } from "./components/NavBar.jsx";
+import { NavBar } from "./pages/components/NavBar.jsx";
 
 const App = () => {
   return (
