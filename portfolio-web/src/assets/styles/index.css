@@ -7,6 +7,7 @@
   --bg-color-middle2-green: #062221;
   --bg-color-soft-green: #87bba2;
   --bg-color-navy: #0b032d;
+  --bg-color-bole: #a5aa52;
 
   --font-white: #e2fdff;
   --font-size-m: 1.6rem;
@@ -29,7 +30,7 @@ html {
 
 /* NAVBAR */
 .header {
-  padding: 1rem 2rem;
+  padding: 1.2rem 3.2rem;
   min-height: 10rem;
   width: 100%;
   background-color: var(--bg-color-middle2-green);
@@ -48,17 +49,27 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: fit-content;
 }
-.logo {
+.logo-join {
   position: relative;
-  display: block;
+  rotate: 23deg;
+  background-color: var(--bg-color-bole);
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.logo-join:hover {
+  transform: scale(1.1);
+  rotate: 5deg;
+}
+
+.logo-part1 {
+  display: inline-block;
   width: 1rem;
   height: 3rem;
   background-color: var(--font-white);
 }
 
-.logo:after {
+.logo-part2 {
   content: "";
   position: absolute;
   right: -1.1rem;
@@ -66,7 +77,7 @@ html {
   height: 2rem;
   background-color: var(--font-white);
 }
-.logo:before {
+.logo-part3 {
   content: "";
   position: absolute;
   right: -0.54rem;
@@ -80,8 +91,8 @@ html {
   rotate: 20deg;
 }
 
-.logo-anchor {
-  width: 100%;
+.logo-container a .logo:hover {
+  background-color: red;
 }
 
 /* NavLinks */
@@ -100,7 +111,14 @@ html {
   padding: 0.625rem;
 }
 
-.nav-li > a > span {
+.nav-li > * {
+  transition: color 0.5s ease-out;
+}
+.nav-li:is(:hover) > * {
+  color: var(--bg-color-bole);
+}
+
+.nav-li-number {
   font-family: var(--font-mono);
   color: var(--font-white);
   font-size: var(--font-size-m);
@@ -114,6 +132,7 @@ html {
   color: var(--font-white);
   font-size: var(--font-size-m);
   font-family: var(--font-mono);
+  text-transform: capitalize;
 }
 
 /* BUTTON RESUME */
@@ -122,10 +141,12 @@ html {
   font-family: var(--font-mono);
   font-size: var(--font-size-m);
   border-color: var(--bg-color-soft-green);
-  color: var(--bg-color-soft-green);
+  /* color: var(--bg-color-soft-green); */
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .btn-resume:is(:hover, :active) {
-  background-color: #00072d;
+  background-color: var(--bg-color-bole);
+  color: black;
+  border: 1px solid black;
 }

@@ -1,11 +1,13 @@
 import "./assets/styles/index.css";
 import "./assets/styles/App.css";
-import { NavBar } from "./pages/components/NavBar.jsx";
+import { Header } from "./layouts/header/Header.jsx";
+import { HeroSection } from "./layouts/hero-section/HeroSection.jsx";
 
 const App = () => {
   return (
     <div>
-      <NavBar />
+      <Header />
+      <HeroSection />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import AnchorLink from "./AnchorLink.jsx";
-import Button from "./Button.jsx";
+import Button from "../../components/Button.jsx";
 
 function NavLink() {
   return (
@@ -9,7 +9,7 @@ function NavLink() {
         <ol className="flex space-between nav-link style-none">
           <AnchorLink name={"About"} number={"01."} />
           <AnchorLink name={"Work"} number={"02."} />
-          <AnchorLink name={"Contact"} number={"01."} />
+          <AnchorLink name={"Contact"} number={"03."} />
         </ol>
         <Button text="Resume" />
       </div>

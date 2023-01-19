@@ -4,10 +4,8 @@ function AnchorLink({ name, number }) {
   return (
     <>
       <li className="nav-li flex flex-center">
-        <a href="/#about">
-          <span>{number}</span>
-          {name}
-        </a>
+        <span className="nav-li-number">{number}</span>
+        <a href="/#about">{name}</a>
       </li>
     </>
   );
