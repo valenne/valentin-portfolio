@@ -29,3 +29,11 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+/* GRID */
+.grid {
+  display: grid;
+}
+.grid-2cols {
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+}

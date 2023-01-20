@@ -1,6 +1,7 @@
 import React from "react";
 import AnchorLink from "./AnchorLink.jsx";
 import Button from "../../components/Button.jsx";
+import CV from "../../assets/files/CV_IT.pdf";
 
 function NavLink() {
   return (
@@ -11,7 +12,7 @@ function NavLink() {
           <AnchorLink name={"Work"} number={"02."} />
           <AnchorLink name={"Contact"} number={"03."} />
         </ol>
-        <Button text="Resume" />
+        <Button text="Resume" refLink={CV} />
       </div>
     </>
   );
