@@ -1,8 +1,9 @@
 import React from "react";
+import Button from "../../components/Button";
 
 export function HeroSection() {
   return (
-    <section className="hero-section flex ">
+    <section className="hero-section flex">
       <div>
         <h1>Hi, my name is</h1>
       </div>
@@ -18,6 +19,7 @@ export function HeroSection() {
           that helped to clear the spaces and thoughts.
         </p>
       </div>
+      <Button text="Check my works" refLink={"#work"} />
     </section>
   );
 }

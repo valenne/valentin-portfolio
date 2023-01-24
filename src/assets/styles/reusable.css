@@ -28,6 +28,9 @@
   padding: 1rem 1.2rem;
   font-weight: 500;
   cursor: pointer;
+  display: block;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 /* GRID */

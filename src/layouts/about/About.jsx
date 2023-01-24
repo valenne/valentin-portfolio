@@ -1,10 +1,13 @@
 import React from "react";
 import avatar from "../../assets/img/avatar.jpg";
 
+import { SkillList } from "./SkillList.jsx";
+import { SectionDivider } from "../../components/SectionDivider.jsx";
+
 export function About() {
   return (
     <section className="about-section" id="about">
-      <h2>About Me</h2>
+      <SectionDivider sectionNumber={"01"} sectionName={"About Me"} />
       <div className="about-inner grid">
         <div className="about-description">
           <div className="about-text">
@@ -20,13 +23,7 @@ export function About() {
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
-          <ul className="grid grid-2cols skill-list">
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Mongodb</li>
-          </ul>
+          <SkillList />
         </div>
         <div className="picture-container">
           <picture className="color-test">

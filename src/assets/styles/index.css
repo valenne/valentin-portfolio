@@ -11,6 +11,8 @@
 
   --font-white: #e2fdff;
   --font-gray: #e2fdff8c;
+  --bg-divider-clearGray: #e2fdff31;
+
   --font-size-m: 1.6rem;
   --font-size-g: 1.8rem;
   --font-size-x: 2.4rem;
@@ -177,6 +179,8 @@ html {
   align-items: flex-start;
   justify-content: center;
   margin: 0px auto;
+  gap: 1.6rem;
+
   /* margin-top: 10rem; */
 }
 
@@ -184,7 +188,7 @@ html {
   font-size: 1.6rem;
   font-family: var(--font-mono);
   color: var(--bg-color-bole);
-  margin-bottom: var(--margin-s);
+  /* margin-bottom: var(--margin-s); */
   line-height: 1.1;
   font-weight: 400;
 }
@@ -192,14 +196,14 @@ html {
 .hero-section h2 {
   font-size: clamp(4rem, 8vw, 8rem);
   color: var(--font-white);
-  margin-bottom: var(--margin-s);
+  /* margin-bottom: var(--margin-s); */
 }
 
 .hero-section h3 {
   font-size: clamp(4rem, 8vw, 8rem);
   color: var(--font-gray);
   /* opacity: 0.7; */
-  margin-bottom: var(--margin-xl);
+  /* margin-bottom: var(--margin-xl); */
   z-index: -1;
 }
 
@@ -221,20 +225,27 @@ html {
   margin: 0 auto;
   padding: 10rem 0;
 }
-.about-section h2 {
+
+.title-divider {
   display: flex;
-  position: relative;
   align-items: center;
   width: 100%;
   font-size: clamp(var(--font-size-x), 5vw, var(--font-size-xl));
   font-family: var(--font-sans);
   color: var(--font-white);
-  margin: 1rem 0 4rem;
 }
 
-.about-section h2:before {
-  content: "01.";
-  position: relative;
+.divider-container {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  margin: 1rem 0 4rem;
+  padding: 1.2rem 2.4rem;
+  z-index: -1;
+}
+
+.divider-number {
   color: var(--bg-color-bole);
   margin-right: 1.2rem;
   font-family: var(--font-mono);
@@ -242,14 +253,11 @@ html {
   align-self: flex-end;
 }
 
-.about-section h2:after {
-  display: block;
-  position: relative;
+.divider-line {
   bottom: -5px;
-  content: "";
   height: 1px;
-  background-color: var(--font-gray);
-  width: 30rem;
+  background-color: var(--bg-divider-clearGray);
+  min-width: 30rem;
   margin-left: 3rem;
   align-self: center;
 }
@@ -264,7 +272,7 @@ html {
 }
 
 .about-text p {
-  font-size: 2rem;
+  font-size: clamp(var(--font-size-g), 4vw, var(--font-size-m));
   line-height: 1.3;
 }
 
@@ -297,7 +305,7 @@ html {
 
 .picture-avatar {
   border-radius: 0.5rem;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   max-width: 30rem;
   max-height: 35rem;
   z-index: -1;
@@ -331,4 +339,11 @@ html {
 
 .picture-avatar:hover + .picture-design {
   transform: translate(-5px, -5px);
+}
+
+/* SECTION-JOBS */
+.jobs-section {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 10rem 0;
 }

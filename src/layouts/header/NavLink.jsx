@@ -8,9 +8,9 @@ function NavLink() {
     <>
       <div className="flex flex-center nav-link-container">
         <ol className="flex space-between nav-link style-none">
-          <AnchorLink name={"About"} number={"01."} />
-          <AnchorLink name={"Work"} number={"02."} />
-          <AnchorLink name={"Contact"} number={"03."} />
+          <AnchorLink name={"About"} number={"01."} link={"about"} />
+          <AnchorLink name={"Work"} number={"02."} link={"work"} />
+          <AnchorLink name={"Contact"} number={"03."} link={"contact"} />
         </ol>
         <Button text="Resume" refLink={CV} />
       </div>
