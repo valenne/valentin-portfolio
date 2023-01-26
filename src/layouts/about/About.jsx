@@ -1,10 +1,10 @@
 import React from "react";
-import avatar from "../../assets/img/avatar.jpg";
+import avatar from "../../assets/img/avatar_2.png";
 
 import { SkillList } from "./SkillList.jsx";
 import { SectionDivider } from "../../components/SectionDivider.jsx";
 
-export function About() {
+export const About = () => {
   return (
     <section className="about-section" id="about">
       <SectionDivider sectionNumber={"01"} sectionName={"About Me"} />
@@ -34,4 +34,4 @@ export function About() {
       </div>
     </section>
   );
-}
+};

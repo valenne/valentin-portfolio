@@ -1,6 +1,6 @@
 import React from "react";
 
-function Logo() {
+export const Logo = () => {
   return (
     <div className="logo-container">
       <a className="anchor-logo" href="/">
@@ -12,6 +12,4 @@ function Logo() {
       </a>
     </div>
   );
-}
-
-export default Logo;
+};

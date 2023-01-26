@@ -1,9 +1,9 @@
 import React from "react";
 
-export function SectionDivider({ sectionName, sectionNumber }) {
+export const SectionDivider = ({ sectionName, sectionNumber }) => {
   return (
     <div className="flex divider-container">
-      <div className="flex">
+      <div className="flex ">
         <div className="divider-number">{`${sectionNumber}.`}</div>
         <h2 className="title-divider">{sectionName}</h2>
         <div className="divider-line"></div>
@@ -11,4 +11,4 @@ export function SectionDivider({ sectionName, sectionNumber }) {
       <div></div>
     </div>
   );
-}
+};

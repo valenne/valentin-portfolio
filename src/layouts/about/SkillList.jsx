@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 // skill Context
 import { SkillContext } from "../../context/skillContext.jsx";
 
-export function SkillList() {
+export const SkillList = () => {
   const skills = useContext(SkillContext);
 
   return (
@@ -13,4 +13,4 @@ export function SkillList() {
       ))}
     </ul>
   );
-}
+};

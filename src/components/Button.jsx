@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({ text, refLink }) {
+export const Button = ({ text, refLink }) => {
   return (
     <div>
       <a className={`btn btn-resume`} href={refLink}>
@@ -8,6 +8,4 @@ function Button({ text, refLink }) {
       </a>
     </div>
   );
-}
-
-export default Button;
+};

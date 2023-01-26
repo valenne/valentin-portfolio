@@ -2,7 +2,7 @@ import React, { createContext } from "react";
 
 export const SkillContext = createContext();
 
-export function SkillContextProvider({ children }) {
+export const SkillContextProvider = ({ children }) => {
   const skills = [
     "JavaScript (ES6+)",
     "Node.js",
@@ -15,4 +15,4 @@ export function SkillContextProvider({ children }) {
   return (
     <SkillContext.Provider value={skills}>{children}</SkillContext.Provider>
   );
-}
+};

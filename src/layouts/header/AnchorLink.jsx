@@ -1,6 +1,6 @@
 import React from "react";
 
-function AnchorLink({ name, number, link }) {
+export const AnchorLink = ({ name, number, link }) => {
   return (
     <>
       <li className="nav-li flex flex-center">
@@ -9,6 +9,4 @@ function AnchorLink({ name, number, link }) {
       </li>
     </>
   );
-}
-
-export default AnchorLink;
+};

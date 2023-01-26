@@ -40,3 +40,11 @@
 .grid-2cols {
   grid-template-columns: repeat(2, minmax(140px, 200px));
 }
+
+.grid-12cols {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.d-iblock {
+  display: inline-block;
+}

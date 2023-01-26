@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../../components/Button";
+import { Button } from "../../components/Button";
 
-export function HeroSection() {
+export const HeroSection = () => {
   return (
     <section className="hero-section flex">
       <div>
@@ -22,4 +22,4 @@ export function HeroSection() {
       <Button text="Check my works" refLink={"#work"} />
     </section>
   );
-}
+};

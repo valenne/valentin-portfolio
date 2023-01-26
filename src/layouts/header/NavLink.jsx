@@ -1,9 +1,10 @@
 import React from "react";
-import AnchorLink from "./AnchorLink.jsx";
-import Button from "../../components/Button.jsx";
+import { AnchorLink } from "./AnchorLink.jsx";
+import { Button } from "../../components/Button.jsx";
+
 import CV from "../../assets/files/CV_IT.pdf";
 
-function NavLink() {
+export const NavLink = () => {
   return (
     <>
       <div className="flex flex-center nav-link-container">
@@ -12,10 +13,8 @@ function NavLink() {
           <AnchorLink name={"Work"} number={"02."} link={"work"} />
           <AnchorLink name={"Contact"} number={"03."} link={"contact"} />
         </ol>
-        <Button text="Resume" refLink={CV} />
+        <Button text={"resume"} refLink={CV} />
       </div>
     </>
   );
-}
-
-export default NavLink;
+};
