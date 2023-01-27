@@ -4,7 +4,7 @@ import { Button } from "../../components/Button.jsx";
 
 export const SectionContact = () => {
   return (
-    <section id="#contact" className="contact-section flex">
+    <section id="contact" className="contact-section flex">
       <Title number={"03"} titleOne={"Let's Talk"} titleTwo={"Get In Touch"} />
       <p>
         Hello, I am currently looking for an opportunity in the area of ​​web
