@@ -1,9 +1,8 @@
 import React from "react";
-import AppNotes from "../../assets/img/app_notes.png";
 
-export const FeaturedImage = () => {
+export const FeaturedImage = ({ img }) => {
   return (
-    <div className="featured-image grid-area-image grid-column-image frotate fne">
+    <div className="featured-image grid-area-image frotate fne">
       <div className="c-image">
         <a
           className="d-iblock"
@@ -11,7 +10,7 @@ export const FeaturedImage = () => {
         >
           <div className="fih">
             <picture className="proyect-image">
-              <img src={AppNotes} alt="example of the app notes" />
+              <img src={img} alt="example of the app notes" />
             </picture>
           </div>
         </a>
