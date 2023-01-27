@@ -11,7 +11,9 @@ export const HeroSection = () => {
         <h2>Nelson Venegas.</h2>
       </div>
       <div>
-        <h3>I like to create things.</h3>
+        <h3>
+          I like to create <span className="style-underline">things.</span>{" "}
+        </h3>
       </div>
       <div>
         <p>

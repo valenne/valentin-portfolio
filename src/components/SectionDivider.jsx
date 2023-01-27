@@ -8,7 +8,6 @@ export const SectionDivider = ({ sectionName, sectionNumber }) => {
         <h2 className="title-divider">{sectionName}</h2>
         <div className="divider-line"></div>
       </div>
-      <div></div>
     </div>
   );
 };

@@ -12,12 +12,12 @@ export const FeaturedLinks = ({ data, name }) => {
       {name === "github" ? (
         <a href={data[name]}>
           <title>{urlName}</title>
-          <GoMarkGithub />
+          <GoMarkGithub className="proyect-link" />
         </a>
       ) : (
         <a href={data[name]}>
           <title>{urlName}</title>
-          <GoLinkExternal />
+          <GoLinkExternal className="proyect-link" />
         </a>
       )}
     </>

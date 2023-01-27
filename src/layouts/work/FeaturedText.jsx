@@ -25,7 +25,7 @@ export const FeaturedText = ({ proyectName, proyectDesc, tech, data }) => {
         </ul>
 
         {/* link to repo and page */}
-        <div>
+        <div className="proyect-links-container">
           <FeaturedLinks data={data} name={"github"} />
           <FeaturedLinks data={data} name={"external link"} />
         </div>

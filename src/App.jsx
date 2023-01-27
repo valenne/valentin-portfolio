@@ -1,18 +1,20 @@
 import "./assets/styles/index.css";
 import "./assets/styles/App.css";
-import { Header } from "./layouts/header/Header.jsx";
-import { HeroSection } from "./layouts/hero-section/HeroSection.jsx";
-import { About } from "./layouts/about/About.jsx";
-import { Work } from "./layouts/work/Work.jsx";
+import { Header } from "./layouts/header/SectionHeader.jsx";
+import { HeroSection } from "./layouts/hero-section/SectionHero.jsx";
+import { About } from "./layouts/about/SectionAbout.jsx";
+import { Work } from "./layouts/work/SectionWork.jsx";
+import { SectionContact } from "./layouts/contact/SectionContact";
 
 const App = () => {
   return (
-    <div>
+    <main>
       <Header />
       <HeroSection />
       <About />
       <Work />
-    </div>
+      <SectionContact />
+    </main>
   );
 };
 
