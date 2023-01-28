@@ -11,14 +11,6 @@ export const SectionContact = () => {
         development. If you have any questions, or just want to stay in touch, I
         will do my best to reply to your message.
       </p>
-      {/* <a
-        className="email-link"
-        href="mailto:nelson.venegasgg@gmail.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Say Hello
-      </a> */}
 
       <Button text="Say Hello" refLink={"mailto:nelson.venegasgg@gmail.com"} />
     </section>
