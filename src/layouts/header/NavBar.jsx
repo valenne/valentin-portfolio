@@ -3,7 +3,7 @@ import { NavLink } from "./NavLink.jsx";
 
 export const NavBar = () => {
   return (
-    <header className="header flex flex-center">
+    <header id="index" className="header flex flex-center">
       <nav className="navBar flex space-between">
         <Logo />
         <NavLink />
