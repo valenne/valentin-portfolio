@@ -48,7 +48,7 @@ html {
   left: 0;
   width: 100%;
   margin: 0 auto;
-  z-index: 10;
+  z-index: 99;
 }
 .header {
   padding: 1.2rem 3.2rem;
@@ -214,11 +214,27 @@ html {
   margin-bottom: 1.2rem;
 }
 
-.hero-section h3:hover .style-underline {
-  text-decoration: underline;
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
 }
 
-@keyframes underline {
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-color-bole);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 :is(.hero-section) :where(h2, h3) {
@@ -466,6 +482,11 @@ html {
 
 .featured-tech li {
   margin: 0px 0px 5px 20px;
+}
+
+.li-tech-animation:hover {
+  color: var(--bg-color-bole);
+  text-decoration: underline;
 }
 
 .featured-dc {

@@ -6,7 +6,13 @@ import { About } from "./layouts/about/SectionAbout.jsx";
 import { Work } from "./layouts/work/SectionWork.jsx";
 import { SectionContact } from "./layouts/contact/SectionContact";
 
+import React, { useEffect } from "react";
+
 const App = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <main>
       <Header />

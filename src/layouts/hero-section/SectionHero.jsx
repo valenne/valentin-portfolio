@@ -12,7 +12,8 @@ export const HeroSection = () => {
       </div>
       <div>
         <h3>
-          I like to create <span className="style-underline">things.</span>{" "}
+          I like to create{" "}
+          <span className="hover-underline-animation">things.</span>
         </h3>
       </div>
       <div>
