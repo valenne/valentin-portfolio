@@ -1,6 +1,5 @@
 import React from "react";
 import avatar from "../../assets/img/avatar_2.png";
-
 import { SkillList } from "./SkillList.jsx";
 import { SectionDivider } from "../../components/SectionDivider.jsx";
 

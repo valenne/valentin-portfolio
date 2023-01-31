@@ -156,6 +156,24 @@ html {
   text-transform: capitalize;
 }
 
+.hamburguer-menu {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--font-white);
+  display: block;
+  position: relative;
+}
+
+.none {
+  display: none;
+}
+
+.test-collapsed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* BUTTON RESUME */
 .btn-resume {
   background-color: var(--bg-color-middle2-green);
@@ -232,7 +250,7 @@ html {
   transition: transform 0.25s ease-out;
 }
 
-.hover-underline-animation:hover::after {
+.hero-section div:nth-child(3):hover .hover-underline-animation::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -478,15 +496,16 @@ html {
   margin: 2.4rem 0 2.4rem;
   font-size: var(--font-size-s);
   font-family: var(--font-mono);
+  transition: all 0.5s ease-in-out;
 }
 
 .featured-tech li {
   margin: 0px 0px 5px 20px;
 }
 
-.li-tech-animation:hover {
-  color: var(--bg-color-bole);
-  text-decoration: underline;
+.featured-tech .hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .featured-dc {

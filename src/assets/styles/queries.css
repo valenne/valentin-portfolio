@@ -1,0 +1,21 @@
+/* small */
+@media (max-width: 640px) {
+  .hamburguer-menu {
+    display: block;
+  }
+  .nav-link-container {
+    display: none;
+  }
+}
+/* mediam */
+@media (max-width: 768px) {
+}
+/* large */
+@media (max-width: 1024px) {
+}
+/* extra-large */
+@media (max-width: 1280px) {
+}
+/* ultra-wide */
+@media (max-width: 1536px) {
+}
