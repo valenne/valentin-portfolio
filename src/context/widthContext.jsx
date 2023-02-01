@@ -27,7 +27,7 @@ export const WidthContextProvider = ({ children }) => {
   }, [state.windowWidth]);
 
   return (
-    <WidthContext.Provider value={{ isOpen, state, openMenu }}>
+    <WidthContext.Provider value={{ isOpen, state, openMenu, setIsOpen }}>
       {children}
     </WidthContext.Provider>
   );

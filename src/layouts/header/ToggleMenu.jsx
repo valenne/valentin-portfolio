@@ -6,7 +6,7 @@ import { WidthContext } from "../../context/widthContext.jsx";
 
 export const ToggleMenu = ({ openMenu }) => {
   const { isOpen } = useContext(WidthContext);
-  console.log(isOpen);
+  // console.log(isOpen);
   return (
     <>
       {isOpen ? (

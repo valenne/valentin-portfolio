@@ -6,9 +6,6 @@
 }
 /* mediam */
 @media (max-width: 768px) {
-  .nav-link-container[class*="open"] {
-    /* background-color: red; */
-  }
   .nav-link-container {
     position: absolute;
     top: 0rem;
