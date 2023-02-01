@@ -1,41 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { AnchorLink } from "./AnchorLink.jsx";
 import { Button } from "../../components/Button.jsx";
-
 import CV from "../../assets/files/CV_IT.pdf";
 import { ToggleMenu } from "./toggleMenu.jsx";
 
+import { WidthContext } from "../../context/widthContext.jsx";
+
 export const NavLink = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [state, setState] = useState({
-    windowWidth: window.innerWidth,
-    isDesiredWidth: false,
-  });
+  const { isOpen, state, openMenu } = useContext(WidthContext);
 
-  console.log(state);
-  console.log(isOpen);
-
-  const openMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  useEffect(() => {
-    const resizeHandler = () => {
-      const currentWindowWidth = window.innerWidth;
-      const isDesiredWidth = currentWindowWidth < state.windowWidth;
-      setState({ windowWidth: currentWindowWidth, isDesiredWidth });
-    };
-    window.addEventListener("resize", resizeHandler);
-    return () => window.removeEventListener("resize", resizeHandler);
-  }, [state.windowWidth]);
+  const widthRequired = state.windowWidth <= 768;
 
   return (
     <>
-      {state.windowWidth <= 768 ? (
-        <div className="test-collapsed">
+      {widthRequired ? (
+        <>
+          <div className="test-collapsed" id="#navbarCollapse">
+            <ToggleMenu openMenu={openMenu} isOpen={isOpen} />
+          </div>
           <div
             className={`flex flex-center nav-link-container ${
-              isOpen ? "none" : null
+              isOpen == false ? "none" : ""
             } `}
           >
             <ol className="flex space-between nav-link style-none">
@@ -43,10 +28,9 @@ export const NavLink = () => {
               <AnchorLink name={"Work"} number={"02."} link={"work"} />
               <AnchorLink name={"Contact"} number={"03."} link={"contact"} />
             </ol>
-            <Button text={"resume"} refLink={CV} />
+            <Button text={"resume"} refLink={CV} isOpen={isOpen} />
           </div>
-          <ToggleMenu openMenu={openMenu} />
-        </div>
+        </>
       ) : (
         <div className={`flex flex-center nav-link-container`}>
           <ol className="flex space-between nav-link style-none">
@@ -54,6 +38,7 @@ export const NavLink = () => {
             <AnchorLink name={"Work"} number={"02."} link={"work"} />
             <AnchorLink name={"Contact"} number={"03."} link={"contact"} />
           </ol>
+
           <Button text={"resume"} refLink={CV} />
         </div>
       )}

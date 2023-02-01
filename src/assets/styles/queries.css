@@ -1,14 +1,43 @@
 /* small */
+@import url("reusable.css");
+@import url("index.css");
+
 @media (max-width: 640px) {
-  .hamburguer-menu {
-    display: block;
-  }
-  .nav-link-container {
-    display: none;
-  }
 }
 /* mediam */
 @media (max-width: 768px) {
+  .nav-link-container[class*="open"] {
+    /* background-color: red; */
+  }
+  .nav-link-container {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgba(12, 11, 11, 0.836);
+  }
+  .nav-link {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .nav-link > .nav-li > * {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  .nav-li:is(:hover) > * {
+    color: #a5aa52 !important;
+  }
+
+  .test-collapsed {
+    z-index: 99;
+  }
 }
 /* large */
 @media (max-width: 1024px) {
