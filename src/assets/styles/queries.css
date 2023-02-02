@@ -3,6 +3,9 @@
 @import url("index.css");
 
 @media (max-width: 640px) {
+  body {
+    padding: 0 8rem !important;
+  }
 }
 /* mediam */
 @media (max-width: 768px) {
@@ -36,8 +39,123 @@
     z-index: 99;
   }
 }
+
+@media (max-width: 975px) {
+  body {
+    padding: 0 10rem;
+  }
+  li.featured-list {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+
+  .grid-area-text.featured-ctext {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    grid-column: 1/-1 !important;
+  }
+
+  ul.featured-tech {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-area-text .grid {
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.proyect-links-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  div.grid-area-image {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+  }
+
+  div.fih {
+    min-height: 30rem;
+  }
+}
 /* large */
 @media (max-width: 1024px) {
+  .hero-section {
+    max-width: 105rem;
+  }
+  .about-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .about-description {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .picture-container {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .color-test {
+    position: relative;
+  }
+
+  .picture-design {
+    display: none;
+  }
+  .picture-container .picture-avatar {
+    border-radius: 50%;
+  }
+  .about-text {
+    text-align: center;
+  }
+
+  .skill-list {
+    margin: 0 auto;
+    place-content: center;
+  }
+
+  .divider-line {
+    display: none;
+  }
+
+  .divider-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .divider-container > .flex {
+    text-align: center;
+    margin: 0 1rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .divider-container:after {
+    content: "";
+    border: 1px solid #e2fdff31;
+    width: 100%;
+  }
+
+  .featured-ctext {
+    height: 30rem;
+  }
+  .grid-area-text.featured-ctext {
+    grid-column: 5/-1;
+  }
+
+  .proyect-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
 }
 /* extra-large */
 @media (max-width: 1280px) {

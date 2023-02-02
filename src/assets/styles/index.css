@@ -201,6 +201,7 @@ html {
   align-items: flex-start;
   justify-content: center;
   margin: 0px auto;
+  margin-top: 5rem;
   gap: 1.2rem;
   line-height: 1.1;
 }
@@ -347,7 +348,7 @@ html {
 .picture-avatar {
   border-radius: 0.5rem;
   filter: grayscale(90%);
-
+  pointer-events: none;
   max-width: 30rem;
   max-height: 35rem;
   z-index: -1;
@@ -404,7 +405,6 @@ html {
 
 .featured-image {
   transition: all 0.2s linear;
-  box-shadow: 0 10px 30px -15px var(--bg-color-navy);
   z-index: 1;
   width: 100%;
   position: relative;
@@ -425,6 +425,7 @@ html {
 .proyect-image {
   display: block;
   height: 100%;
+  box-shadow: 0 10px 30px -15px var(--bg-color-navy);
 }
 
 .fih .proyect-image > img {
@@ -458,6 +459,7 @@ html {
   text-align: right;
   flex-direction: column;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .featured-type {

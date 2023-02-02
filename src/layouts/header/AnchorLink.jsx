@@ -3,7 +3,7 @@ import { WidthContext } from "../../context/widthContext.jsx";
 
 export const AnchorLink = ({ name, number, link }) => {
   const { isOpen, openMenu } = useContext(WidthContext);
-  console.log(isOpen);
+  // console.log(isOpen);
 
   return (
     <>

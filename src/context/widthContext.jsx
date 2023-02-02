@@ -6,7 +6,6 @@ export const WidthContextProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(Boolean);
   const [state, setState] = useState({
     windowWidth: window.innerWidth,
-    isDesiredWidth: false,
   });
 
   const openMenu = () => {
