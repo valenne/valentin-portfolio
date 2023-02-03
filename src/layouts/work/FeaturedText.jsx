@@ -10,9 +10,7 @@ export const FeaturedText = ({ proyectName, proyectDesc, tech, data }) => {
         <p className="featured-type">Featured Proyect</p>
         {/* title with anchor to site */}
         <h3 className="featured-title">
-          <a href="https://notes-app-production-1a7e.up.railway.app/">
-            {proyectName}
-          </a>
+          <a href={data["external link"]}>{proyectName}</a>
         </h3>
         {/* description */}
         <div className="featured-dc">

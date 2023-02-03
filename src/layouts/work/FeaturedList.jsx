@@ -11,7 +11,7 @@ export const FeaturedList = () => {
     <>
       {proyects.map((data) => (
         <li className="grid grid-12cols featured-list" key={data.id}>
-          <FeaturedImage img={data.img} />
+          <FeaturedImage img={data.img} git={data.github} />
           <FeaturedText
             proyectName={data.name}
             proyectDesc={data.description}

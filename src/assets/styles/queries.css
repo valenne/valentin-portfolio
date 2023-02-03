@@ -9,6 +9,9 @@
 }
 /* mediam */
 @media (max-width: 768px) {
+  body {
+    padding: 0 6rem !important;
+  }
   .nav-link-container {
     position: absolute;
     top: 0rem;
@@ -38,6 +41,15 @@
   .test-collapsed {
     z-index: 99;
   }
+  h2.title-divider {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+  }
+
+  ul.featured-tech {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 @media (max-width: 975px) {
@@ -47,14 +59,14 @@
   li.featured-list {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(1, 1fr);
-    gap: 5rem;
+    /* gap: 5rem; */
   }
 
   .grid-area-text.featured-ctext {
     grid-area: 2 / 1 / 3 / 2;
     text-align: center;
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
     grid-column: 1/-1 !important;
   }
 
@@ -80,6 +92,9 @@
 
   div.fih {
     min-height: 30rem;
+  }
+  #work {
+    padding-bottom: 0;
   }
 }
 /* large */
