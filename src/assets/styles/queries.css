@@ -6,6 +6,9 @@
   body {
     padding: 0 8rem !important;
   }
+  #about.about-section {
+    padding-top: 0rem;
+  }
 }
 /* mediam */
 @media (max-width: 768px) {
