@@ -5,7 +5,6 @@ import { DataContext } from "../../context/dataContext.jsx";
 
 export const FeaturedList = () => {
   const proyects = useContext(DataContext);
-  console.log(proyects);
 
   return (
     <>

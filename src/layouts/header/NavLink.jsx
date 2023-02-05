@@ -11,7 +11,7 @@ export const NavLink = () => {
 
   const widthRequired = state.windowWidth <= 768;
 
-  console.log(state.windowWidth);
+  // console.log(state.windowWidth);
 
   return (
     <>

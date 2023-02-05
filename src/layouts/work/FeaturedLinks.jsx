@@ -5,8 +5,6 @@ import { GoMarkGithub, GoLinkExternal } from "react-icons/go";
 export const FeaturedLinks = ({ data, name }) => {
   const urlName = Object.keys(data).filter((item) => item === name)[0];
 
-  console.log(urlName);
-
   return (
     <>
       {name === "github" ? (
